@@ -22,14 +22,14 @@ endif ()
 
 get_filename_component(PICO_SDK_PATH "${PICO_SDK_PATH}" REALPATH BASE_DIR "${CMAKE_BINARY_DIR}")
 
-set(PICO_SDK_PATH ${CMAKE_CURRENT_LIST_DIR} CACHE PATH "Path to the Pico SDK" FORCE)
+set(PICO_SDK_PATH ${CMAKE_CURRENT_LIST_DIR} CACHE PATH "Path to the SDK" FORCE)
 
 list(APPEND CMAKE_MODULE_PATH ${PICO_SDK_PATH}/cmake)
 
 include(${CMAKE_CURRENT_LIST_DIR}/pico_sdk_version.cmake)
 include(pico_utils)
 
-message("Pico SDK is located at ${CMAKE_CURRENT_LIST_DIR}")
+message("PICO_SDK_PATH is  ${CMAKE_CURRENT_LIST_DIR}")
 
 include(pico_pre_load_platform)
 
