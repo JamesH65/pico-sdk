@@ -50,7 +50,8 @@ EXTRACT_STATIC         = YES
 
 EXTRACT_ALL            = NO
 ALWAYS_DETAILED_SEC    = NO
-#REPEAT_BRIEF           = NO
+#REPEAT_BRIEF          = NO
+JAVADOC_AUTOBRIEF      = YES
 
 # Need these next options to ensure that functions with modifiers do not confuse the Doxygen parser.
 # And any further function modifiers here.
